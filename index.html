@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>练习</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+	// 函数封装
+	// 
+	// 
+	// 四则运算
+	// function shu(num1,num2,num) {
+ //            switch(num){
+ //                case '+':console.log(`num1+num2=(${num1+num2})`)
+ //                    break;
+ //                case '-':console.log(`num1+num2=(${num1-num2})`)
+ //                    break;
+ //                case '*':console.log(`num1+num2=(${num1*num2})`)
+ //                    break;
+ //                case '/':console.log(`num1+num2=(${num1/num2})`)
+ //                    break;
+ //                case '%':console.log(`num1+num2=(${num1%num2})`)
+ //                    break;
+ //                default:console.log('输入有误');
+ //            }
+ //        }
+ //        shu(5,8,"+");
+ //        
+ // 9*9乘法表
+  //  function ji(num) {
+  //           for (var i=1;i<num;i++){
+  //               for(var j=1;j<=i;j++){
+
+  //                       document.write(`${j}*${i}=${j*i}`);
+  //                       document.write('&nbsp;&nbsp;&nbsp;')
+		// 		}
+  //          			 document.write('<br>');
+		// 	}
+		// }
+  //    ji(7);    
+  
+	// 10*10表格
+	// function table(a,b) {
+	// 	document.write('<table border=1 cellspacing=0 width=800 height=800 align=center>');
+	// 	for(var i=1;i<=a;i++){	
+	// 			document.write('<tr>');
+	// 		for(var j=1;j<=b;j++){
+	// 			document.write('<td align=center>表格</td>');
+				
+	// 		}
+	// 		document.write('</tr>');
+	// 	}
+	// 	document.write('</table>');
+	// }
+	// table(10,20);
+
+	// 10*10表格交叉换色
+	// function table(a,b,c1,c2,c3,c4) {
+	// 	document.write('<table border=1 cellspacing=0 width=800 height=800 align=center>');
+	// 	for(var i=1;i<=a;i++){	
+	// 		document.write('<tr>');
+	// 		for(var j=1;j<=b;j++){
+	// 			if (j%2==0&&i%2==1) {
+	// 				document.write('<td align=center bgcolor='+c1+'>表格</td>');
+	// 			}else if (j%2==1&&i%2==1) {
+	// 				document.write('<td align=center bgcolor='+c2+'>表格</td>');
+	// 			}else if (j%2==0&&i%2==0) {
+	// 				document.write('<td align=center bgcolor='+c3+'>表格</td>');
+	// 			}
+	// 			else if (j%2==1&&i%2==0) {
+	// 				document.write('<td align=center bgcolor='+c4+'>表格</td>');
+	// 			}
+				
+	// 		}
+	// 		document.write('</tr>');
+	// 	}
+	// 	document.write('</table>');
+	// }
+	// table(10,10,'red','pink','white','yellow');
+
+	//隔行换色
+	// function table(a,b,c1,c2) {
+	// 	document.write('<table border=1 cellspacing=0 width=800 height=800 align=center>');
+	// 	for(var i=1;i<=a;i++){	
+	// 		if(i%2==0){
+	// 			document.write('<tr bgcolor='+c1+'>');
+	// 		}else{
+	// 			document.write('<tr bgcolor='+c2+'>');
+	// 		}
+			
+	// 		for(var j=1;j<=b;j++){
+	// 			document.write('<td align=center>表格</td>');
+				
+	// 		}
+	// 		document.write('</tr>');
+	// 	}
+	// 	document.write('</table>');
+	// }
+	// table(10,10,'red','pink');
+	
+	// 金字塔
+	// function ta(num) {
+	//         for(var i=0;i<num;i++){
+	// 			for(var k=0;k<num-1-i;k++){
+	// 				document.write("&nbsp;&nbsp;");
+	// 			}
+
+	// 			for(var j=0;j<i+1;j++){
+	// 				document.write("&nbsp; &nbsp;*");
+	// 			}
+
+	// 			document.write("<br>");
+	// 		}
+	//     }
+	//     ta(10);
+	//     
+	// 数组去空
+	// var arr = [34,,100,90,,26,60,,80,,6];
+	// 	function kong(arr) {
+ //            var newarr=[];
+ //            for(var i=0;i<arr.length;i++){
+ //                if(arr[i]!=undefined){
+ //                    newarr[newarr.length]=arr[i];
+ //                }
+ //            }
+	// 	return newarr;
+ //        }
+	// 	console.log(kong(arr));
+	 // 数组求最大值、最小值、平均值
+    // var arr=[1,2,3,4,5,6,7,8,9];
+    // var max=arr[0];
+    // var min=arr[0];
+    // var str=0;
+    // var avg;
+    // var sum=arr.length;
+    // for(var i=0;i<sum;i++){
+    // 	if (max<arr[i]) {
+    // 		max=arr[i];
+    // 	}else if (min>arr[i]) {
+    // 		min=arr[i];
+    // 	}
+    // 	str+=arr[i];
+    // }
+    // avg=str/sum;
+    // console.log(`最大值为：${max};  最小值：${min};  平均值：${avg}`);
+    // 数组排序
+    // 从大到小
+    // //    var arr = [34,56,100,55,2,45,6];
+//    function big(arr) {
+//        for(var i=0;i<arr.length;i++){
+//            for(var j=i+1;j<arr.length;j++){
+//                if(arr[i]<arr[j]){
+//                    var ord =arr[i];
+//                    arr[i]=arr[j];
+//                    arr[j]=ord;
+//                }
+//            }
+//        }
+//        return arr;
+//    }
+//    console.log(big(arr))
+//    从小到大
+//    //var arr = [34,56,100,55,2,45,6];
+//function small(arr) {
+//    for(var i=0;i<arr.length;i++){
+//        for(var j=i+1;j<arr.length;j++){
+//            if(arr[i]>arr[j]){
+//                var ord =arr[i];
+//                arr[i]=arr[j];
+//                arr[j]=ord;
+//            }
+//        }
+//    }
+//    return arr;
+//}
+//console.log(small(arr))
+//
+// // 筛选数据类型
+    // var arr=[1,2,3,5,,'张三','李四',true,false];
+    // for(var i=0;i<arr.length;i++){
+    // 	if (typeof arr[i]=="number") {
+    // 		console.log(`这是number类型${arr[i]}`);
+    // 	}else if (typeof arr[i]=="string") {
+    // 		console.log(`这是string类型${arr[i]}`);
+    // 	}else if(typeof arr[i]=="boolean"){
+    // 		console.log(`这是boolean类型${arr[i]}`);
+    // 	}else if (typeof arr[i]=="undefined") {
+    // 		console.log(`这是undefined类型${arr[i]}`);
+    // 	}else if (typeof arr[i]=="null") {
+    // 		console.log(`这是null类型${arr[i]}`);
+    // 	}
+    // }
+    // 筛选数组中大于0的元素
+    //   var arr = [-3,56,100,'123'];
+    // function big(arr) {
+    //     var newarr=[];
+    //     for(var i=0;i<arr.length;i++){
+    //         if(arr[i]>0){
+    //             newarr[newarr.length]=arr[i];
+    //         }
+    //     }
+    //     return newarr;
+    // }
+    // console.log(big(arr));
+    // 
+    // 数组元素扩大2倍
+    // var arr = [34,2,10,'123'];
+    // function two(arr) {
+    //     for(var i=0;i<arr.length;i++){
+    //         arr[i]*=2;
+    //     }
+    //     return arr;
+    // }
+    // console.log(two(arr));
+    // 
+    // 反向输出数组中的元素
+    //  var arr = [6,7,8];
+    // function fan(arr) {
+    //     var newarr = [];
+    //     for(var i =arr.length-1;i>=0;i--){
+    //         newarr[newarr.length]=arr[i];
+    //     }
+    //     return newarr;
+    // }
+    // console.log(fan(arr));
+    // 
+    // 数组合并
+    // var arr =[ -8,34,56,100,'a'];
+    // var arr1 =[56,'123',8,10,'abc']
+    // function and(arr,arr1) {
+    //     for(var i = 0;i <arr1.length;i++){
+    //         arr[arr.length] = arr1[i];
+    //     }
+    //     return arr;
+    // }
+    // console.log(and(arr,arr1));
+    // // 找出数组中是否包含某个元素包含返回true，不包含返回false
+	// var brr=[10,20,30,40,50,60,70,80,90,2];
+//	function chaxun(arr,num) {
+//
+//		for(var i=0 ; i<arr.length;i++){
+//			// console.log(typeof num);
+//			if (arr[i]===num) {
+//				// alert(true);
+//				return true;
+//				//return  作用   在函数调用的地方返回一个值，跳出当前函数
+//			}
+//		}
+//		return false;
+//	}
+	
+	// console.log(chaxun(brr,90));
+	//数组查找，查找数组中是否包含a元素，包含则返回此元素的下标，不包含则返回-1
+	// var brr=[10,2,3,4,56,6,7,8];
+	// function chaxun(arr,num) {
+	// 	for(var i=0 ; i<arr.length;i++){
+	// 		// console.log(typeof num);
+	// 		if (arr[i]==num) {
+	// 			// alert(true);
+	// 			return i;
+	// 			//return  作用   在函数调用的地方返回一个值，跳出当前函数
+	// 		}
+					
+	// 	}
+	// 	return -1;
+	// }
+		
+	// document.write(chaxun(brr,6));
+	// 
+	// 将数组中的元素用'-'链接
+	// var arr = [23,'123',55,'abc'];
+//    function link(arr){
+//        var str = '';
+//        for(var i = 0;i<arr.length;i++){
+//            if(arr[i]==arr[arr.length-1]){
+//                str = str + arr[i] ;
+//            }else{
+//                str = str + arr[i] + '-';
+//            }
+//        }
+//        return str;
+//    }
+//    console.log(link(arr));
+//    去重
+//     var arr=[22,4,56,4,22,56];
+   //  function qc(arr) {
+   //      var newarr = [];
+   //      for (var i = 0; i < arr.length; i++) {
+   //          var flag=true;
+   //          for (var j = i + 1; j < arr.length; j++) {
+   //              if (arr[i] == arr[j]) {
+   //                 flag=false;
+   //              }
+   //          }
+   //          if(flag==true){
+   //              newarr[newarr.length] = arr[i];
+   //          }
+   //      }
+   //      return newarr;
+   //  }
+   // console.log(qc(arr));
+   // 
+   // 成绩查询
+   			// var grade = prompt('请输入成绩');
+      //       if(grade >= 0 && grade <60){
+      //           alert('成绩不及格');
+      //           if(grade >=0 && grade <40){
+      //               alert('不及格且成绩实在太差');
+      //           }else{
+      //               alert('不及格需加倍努力');
+      //           }
+      //       }else if(grade >=60 && grade <= 100){
+      //           alert('及格');
+      //           if(grade >= 60 && grade <80){
+      //               alert('及格且成绩有待提高');
+      //           }else if(grade >=80 && grade <90){
+      //               alert('良好');
+      //           }else if(grade >=90 && grade <100){
+      //               alert('优秀');
+      //           }else{
+      //               alert('非常 棒');
+      //           }
+      //       }else{
+      //           alert('输入有误');
+      //       }
+      //       
+      //       水仙花
+  //           for(var i =1;i<10;i++){ 
+		// 	for(var j =0;j<10;j++){
+		// 		for(var k=0;k<10;k++){
+		// 			if((i**3+j**3+k**3)==(i*100+j*10+k)){
+		// 				console.log(`这是水仙花数${i*100+j*10+k}`)
+		// 			}
+		// 		}
+		// 	}
+		// }
+		// 
+		// 星期输出
+		// var week=prompt('请输入星期');
+		// switch(week){
+		// 	case '1':alert('星期一');
+		// 	break;
+		// 	case '2':alert('星期二');
+		// 	break;
+		// 	case '3':alert('星期三');
+		// 	break;
+		// 	case '4':alert('星期四');
+		// 	break;
+		// 	case '5':alert('星期五');
+		// 	break;
+		// 	case '6':alert('星期六');
+		// 	break;
+		// 	case '7':alert('星期日');
+		// 	break;
+		// 	default:alert('输入有误');
+		// }
+// 
+</script>
